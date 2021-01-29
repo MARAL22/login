@@ -45,5 +45,12 @@ export class AuthService {
     loginGoogleUser(){
         return this.afsAuth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
     }
-    
+
+    loginFaceebookUser(){
+        return this.afsAuth.signInWithPopup(new firebase.auth.FacebookAuthProvider());
+    }
+
+    loginTwitterUser(){
+        return this.afsAuth.signInWithPopup(new firebase.auth.TwitterAuthProvider());
+    }
 }
